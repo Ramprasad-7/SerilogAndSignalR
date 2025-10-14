@@ -1,0 +1,8 @@
+2025-10-13 14:27:26.680 +05:30 [INF] Now listening on: http://localhost:5272
+2025-10-13 14:27:27.032 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 14:27:27.040 +05:30 [INF] Hosting environment: Development
+2025-10-13 14:27:27.046 +05:30 [INF] Content root path: C:\Users\VSOFT\Desktop\c#\CricketApp.API\CricketApp.API
+2025-10-13 14:27:29.248 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger - null null
+2025-10-13 14:27:29.907 +05:30 [INF] HTTP GET /swagger responded 404 in 27.7232 ms
+2025-10-13 14:27:29.938 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger - 404 0 null 709.6435ms
+2025-10-13 14:27:29.975 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/swagger, Response status code: 404

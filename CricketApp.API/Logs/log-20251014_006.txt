@@ -1,0 +1,727 @@
+2025-10-14 10:06:08.593 +05:30 [INF] Now listening on: http://localhost:5272
+2025-10-14 10:06:08.991 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-14 10:06:08.997 +05:30 [INF] Hosting environment: Development
+2025-10-14 10:06:09.001 +05:30 [INF] Content root path: C:\Users\VSOFT\Desktop\c#\CricketApp.API\CricketApp.API
+2025-10-14 10:06:09.475 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/index.html - null null
+2025-10-14 10:06:09.966 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/index.html - 200 null text/html;charset=utf-8 506.6656ms
+2025-10-14 10:06:09.991 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_vs/browserLink - null null
+2025-10-14 10:06:10.046 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-14 10:06:10.096 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 42.1377ms
+2025-10-14 10:06:10.209 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_vs/browserLink - 200 null text/javascript; charset=UTF-8 220.07ms
+2025-10-14 10:06:10.289 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - null null
+2025-10-14 10:06:10.315 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.9579ms
+2025-10-14 10:06:14.894 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:06:14.939 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:06:14.973 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:06:16.866 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:06:16.989 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:06:17.017 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 2031.9503ms
+2025-10-14 10:06:17.021 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:06:17.027 +05:30 [INF] HTTP GET /api/Player responded 200 in 2118.9958 ms
+2025-10-14 10:06:17.044 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 2149.1083ms
+2025-10-14 10:06:23.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:23.083 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:23.106 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:23.106 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:23.115 +05:30 [INF] HTTP GET /api/Players responded 404 in 2.4664 ms
+2025-10-14 10:06:23.116 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 32.6041ms
+2025-10-14 10:06:23.119 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:23.123 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 40.3324ms
+2025-10-14 10:06:23.148 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:23.177 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:23.182 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:23.201 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:23.205 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 22.9568 ms
+2025-10-14 10:06:23.208 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=da4gbAWAEzoyDvkVUyxMFQ - null null
+2025-10-14 10:06:23.210 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 91.9112ms
+2025-10-14 10:06:23.220 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:23.226 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:25.226 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:25.229 +05:30 [INF] HTTP GET /hubs/app responded 101 in 2003.6173 ms
+2025-10-14 10:06:25.233 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=da4gbAWAEzoyDvkVUyxMFQ - 101 null null 2024.8782ms
+2025-10-14 10:06:25.285 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:25.286 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:25.332 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.336 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.339 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.1048 ms
+2025-10-14 10:06:25.340 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 53.9255ms
+2025-10-14 10:06:25.342 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:25.350 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 64.9626ms
+2025-10-14 10:06:25.357 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.364 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:25.365 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:25.373 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:25.377 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 12.0754 ms
+2025-10-14 10:06:25.378 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=v0eIvCkc22k3iVJhotCGBg - null null
+2025-10-14 10:06:25.384 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 42.2587ms
+2025-10-14 10:06:25.387 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.396 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:25.765 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:25.793 +05:30 [INF] HTTP GET /hubs/app responded 101 in 396.5383 ms
+2025-10-14 10:06:25.798 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=v0eIvCkc22k3iVJhotCGBg - 101 null null 419.7902ms
+2025-10-14 10:06:25.825 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:25.839 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.824 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:25.853 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.858 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0633 ms
+2025-10-14 10:06:25.850 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 25.6489ms
+2025-10-14 10:06:25.859 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:25.871 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 47.0099ms
+2025-10-14 10:06:25.884 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.888 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:25.892 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:25.897 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:25.902 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 9.3216 ms
+2025-10-14 10:06:25.903 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=Ku0KfyfhH2cHe4ezdncRSQ - null null
+2025-10-14 10:06:25.909 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 50.1966ms
+2025-10-14 10:06:25.912 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:25.921 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:25.966 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:25.976 +05:30 [INF] HTTP GET /hubs/app responded 101 in 54.4122 ms
+2025-10-14 10:06:26.011 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=Ku0KfyfhH2cHe4ezdncRSQ - 101 null null 108.2174ms
+2025-10-14 10:06:26.052 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:26.063 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:26.069 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 17.3977ms
+2025-10-14 10:06:26.074 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:26.051 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:26.093 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:26.090 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:26.096 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0950 ms
+2025-10-14 10:06:26.097 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:26.103 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 52.2968ms
+2025-10-14 10:06:26.106 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:26.112 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=Uc07r8riJWlz_xXvTA_h6A - null null
+2025-10-14 10:06:26.120 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:26.121 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 23.7326 ms
+2025-10-14 10:06:26.124 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:26.134 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 60.2241ms
+2025-10-14 10:06:26.135 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:28.966 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:28.970 +05:30 [INF] HTTP GET /hubs/app responded 101 in 2834.7035 ms
+2025-10-14 10:06:28.974 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=Uc07r8riJWlz_xXvTA_h6A - 101 null null 2862.6636ms
+2025-10-14 10:06:51.891 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:51.894 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:51.902 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:51.907 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:51.912 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 17.95ms
+2025-10-14 10:06:51.911 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0640 ms
+2025-10-14 10:06:51.921 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:51.948 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:51.952 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:51.965 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:51.940 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 49.6492ms
+2025-10-14 10:06:51.981 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 23.9624 ms
+2025-10-14 10:06:51.990 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 69.5029ms
+2025-10-14 10:06:51.983 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:51.991 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=ZA_Of4X02ZaR9jKpZsYZMQ - null null
+2025-10-14 10:06:52.014 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:52.016 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:54.494 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:54.519 +05:30 [INF] HTTP GET /hubs/app responded 101 in 2503.0826 ms
+2025-10-14 10:06:54.524 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=ZA_Of4X02ZaR9jKpZsYZMQ - 101 null null 2533.3966ms
+2025-10-14 10:06:54.573 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:54.591 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:54.572 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:54.599 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:54.594 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 21.1385ms
+2025-10-14 10:06:54.602 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:54.602 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0538 ms
+2025-10-14 10:06:54.619 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:54.625 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 52.9752ms
+2025-10-14 10:06:54.626 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:54.634 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:54.636 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:54.641 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=6orxfiOFziO10n6VpTbs6g - null null
+2025-10-14 10:06:54.647 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 21.7101 ms
+2025-10-14 10:06:54.650 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:54.655 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 53.4721ms
+2025-10-14 10:06:54.657 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:55.052 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:55.083 +05:30 [INF] HTTP GET /hubs/app responded 101 in 426.0651 ms
+2025-10-14 10:06:55.087 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=6orxfiOFziO10n6VpTbs6g - 101 null null 445.7641ms
+2025-10-14 10:06:55.135 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:55.134 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:55.145 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.152 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.154 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 19.1491ms
+2025-10-14 10:06:55.157 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:55.157 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0526 ms
+2025-10-14 10:06:55.201 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.204 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 70.4074ms
+2025-10-14 10:06:55.210 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:55.213 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:55.219 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:55.224 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=0cCiYhQz6GY_6TUVC3GCjQ - null null
+2025-10-14 10:06:55.227 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 17.1750 ms
+2025-10-14 10:06:55.230 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.235 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 78.3318ms
+2025-10-14 10:06:55.236 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:55.701 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:55.709 +05:30 [INF] HTTP GET /hubs/app responded 101 in 473.0534 ms
+2025-10-14 10:06:55.718 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=0cCiYhQz6GY_6TUVC3GCjQ - 101 null null 494.7407ms
+2025-10-14 10:06:55.781 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:55.780 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:55.797 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.800 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.805 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0571 ms
+2025-10-14 10:06:55.801 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 19.7161ms
+2025-10-14 10:06:55.814 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:55.839 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 59.1096ms
+2025-10-14 10:06:55.859 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.862 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:55.864 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:55.871 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:55.876 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 12.4251 ms
+2025-10-14 10:06:55.877 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=Uq7Ds0vBM_Y5i5_hCFOVMA - null null
+2025-10-14 10:06:55.883 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 68.6296ms
+2025-10-14 10:06:55.886 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:55.895 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:56.077 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:56.114 +05:30 [INF] HTTP GET /hubs/app responded 101 in 219.5007 ms
+2025-10-14 10:06:56.119 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=Uq7Ds0vBM_Y5i5_hCFOVMA - 101 null null 241.4941ms
+2025-10-14 10:06:56.153 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:56.152 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:56.166 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:56.171 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:56.175 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 21.532ms
+2025-10-14 10:06:56.179 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0817 ms
+2025-10-14 10:06:56.177 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:56.192 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 40.4414ms
+2025-10-14 10:06:56.196 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:56.203 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:56.204 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:56.211 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:56.214 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 9.8035 ms
+2025-10-14 10:06:56.216 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=BSAhpFcS_iuTMp9Y_eQLsQ - null null
+2025-10-14 10:06:56.220 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 42.4892ms
+2025-10-14 10:06:56.228 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:56.235 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:59.277 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:59.291 +05:30 [INF] HTTP GET /hubs/app responded 101 in 3055.4713 ms
+2025-10-14 10:06:59.297 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=BSAhpFcS_iuTMp9Y_eQLsQ - 101 null null 3081.5088ms
+2025-10-14 10:06:59.349 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:59.360 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.362 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 13.4773ms
+2025-10-14 10:06:59.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:59.382 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:59.388 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.409 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.2316 ms
+2025-10-14 10:06:59.401 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.421 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:59.419 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 71.8847ms
+2025-10-14 10:06:59.429 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=f6i1lCc5uFL-wKNt19KWaw - null null
+2025-10-14 10:06:59.425 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:59.443 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:59.454 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 32.7368 ms
+2025-10-14 10:06:59.453 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.461 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 79.4894ms
+2025-10-14 10:06:59.462 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:59.550 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:59.557 +05:30 [INF] HTTP GET /hubs/app responded 101 in 94.9321 ms
+2025-10-14 10:06:59.569 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=f6i1lCc5uFL-wKNt19KWaw - 101 null null 140.2095ms
+2025-10-14 10:06:59.621 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:59.621 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:59.659 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.662 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.667 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 45.744ms
+2025-10-14 10:06:59.665 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.2997 ms
+2025-10-14 10:06:59.668 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:59.678 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 56.8001ms
+2025-10-14 10:06:59.688 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.691 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:59.695 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:59.700 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:59.704 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 8.3945 ms
+2025-10-14 10:06:59.705 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=UU_9NT6VbQ4OEocyIcv9cw - null null
+2025-10-14 10:06:59.710 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 42.1864ms
+2025-10-14 10:06:59.713 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.722 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:59.785 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:06:59.791 +05:30 [INF] HTTP GET /hubs/app responded 101 in 69.6408 ms
+2025-10-14 10:06:59.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=UU_9NT6VbQ4OEocyIcv9cw - 101 null null 95.7058ms
+2025-10-14 10:06:59.870 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:06:59.884 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.887 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 17.4447ms
+2025-10-14 10:06:59.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:06:59.894 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:06:59.908 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.900 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.911 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:59.912 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.3063 ms
+2025-10-14 10:06:59.916 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:06:59.924 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 55.4097ms
+2025-10-14 10:06:59.930 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 18.9716 ms
+2025-10-14 10:06:59.949 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=R-td9QRHLX8uwsUc6dfUkw - null null
+2025-10-14 10:06:59.965 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:06:59.971 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:06:59.951 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:06:59.955 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 61.0617ms
+2025-10-14 10:06:59.997 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:07:00.005 +05:30 [INF] HTTP GET /hubs/app responded 101 in 33.7282 ms
+2025-10-14 10:07:00.009 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=R-td9QRHLX8uwsUc6dfUkw - 101 null null 60.0481ms
+2025-10-14 10:07:00.045 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:07:00.046 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:07:00.104 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:00.106 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:00.109 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0587 ms
+2025-10-14 10:07:00.110 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 64.6935ms
+2025-10-14 10:07:00.112 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:07:00.121 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 76.0393ms
+2025-10-14 10:07:00.128 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:00.137 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:07:00.138 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:07:00.146 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:07:00.149 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 11.7072 ms
+2025-10-14 10:07:00.151 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=dUCsWYMokjyiTqYvd2GhUA - null null
+2025-10-14 10:07:00.157 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 45.3514ms
+2025-10-14 10:07:00.160 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:00.169 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:07:26.551 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:07:26.559 +05:30 [INF] HTTP GET /hubs/app responded 101 in 26390.1097 ms
+2025-10-14 10:07:26.571 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=dUCsWYMokjyiTqYvd2GhUA - 101 null null 26420.5468ms
+2025-10-14 10:07:26.722 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:07:26.723 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:07:26.740 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:26.732 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:26.750 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:07:26.749 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.2321 ms
+2025-10-14 10:07:26.747 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 23.9245ms
+2025-10-14 10:07:26.770 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:26.772 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 50.2693ms
+2025-10-14 10:07:26.787 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:07:26.792 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:07:26.796 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:07:26.800 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=XsfWTrzCSEtpSNM0Cpub1A - null null
+2025-10-14 10:07:26.808 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 21.0476 ms
+2025-10-14 10:07:26.811 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:07:26.816 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 65.9786ms
+2025-10-14 10:07:26.817 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:09:46.696 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:09:46.726 +05:30 [INF] HTTP GET /hubs/app responded 101 in 139908.6153 ms
+2025-10-14 10:09:46.731 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=XsfWTrzCSEtpSNM0Cpub1A - 101 null null 139930.5259ms
+2025-10-14 10:09:46.837 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:09:46.838 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:09:46.845 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:09:46.849 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:09:46.852 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0494 ms
+2025-10-14 10:09:46.856 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:09:46.854 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 15.7105ms
+2025-10-14 10:09:46.882 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 44.6665ms
+2025-10-14 10:09:46.886 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:09:46.903 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:09:46.904 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:09:46.919 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:09:46.926 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 22.1070 ms
+2025-10-14 10:09:46.934 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 78.3334ms
+2025-10-14 10:09:46.943 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=bPi4GdCMFol81L5OqtEBVA - null null
+2025-10-14 10:09:46.950 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:09:46.952 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:12:43.186 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:12:43.201 +05:30 [INF] HTTP GET /hubs/app responded 101 in 176248.6497 ms
+2025-10-14 10:12:43.208 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=bPi4GdCMFol81L5OqtEBVA - 101 null null 176265.2937ms
+2025-10-14 10:14:21.216 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:14:21.222 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:14:21.225 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:14:21.231 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:14:21.232 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0477 ms
+2025-10-14 10:14:21.260 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 44.157ms
+2025-10-14 10:14:21.239 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 17.5516ms
+2025-10-14 10:14:21.250 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:14:21.289 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:14:21.295 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:14:21.303 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:14:21.305 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:14:21.308 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 5.1726 ms
+2025-10-14 10:14:21.312 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=q3CV38Ewzoc6JHIFi2smtg - null null
+2025-10-14 10:14:21.313 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 62.6135ms
+2025-10-14 10:14:21.322 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:14:21.328 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:15:18.818 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:15:18.866 +05:30 [INF] HTTP GET /hubs/app responded 101 in 57538.4488 ms
+2025-10-14 10:15:18.875 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=q3CV38Ewzoc6JHIFi2smtg - 101 null null 57563.3621ms
+2025-10-14 10:15:18.922 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:15:18.933 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:18.921 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:15:18.945 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 23.2456ms
+2025-10-14 10:15:18.950 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:15:18.949 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:18.975 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:18.976 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0631 ms
+2025-10-14 10:15:18.980 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:18.983 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 62.1263ms
+2025-10-14 10:15:18.989 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:18.993 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:15:18.995 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=bdwDhDJpfLVjdQN1Lz853g - null null
+2025-10-14 10:15:19.003 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 22.9263 ms
+2025-10-14 10:15:19.008 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:19.013 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 63.3117ms
+2025-10-14 10:15:19.014 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:15:19.396 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:15:19.428 +05:30 [INF] HTTP GET /hubs/app responded 101 in 413.9062 ms
+2025-10-14 10:15:19.433 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=bdwDhDJpfLVjdQN1Lz853g - 101 null null 437.7453ms
+2025-10-14 10:15:19.476 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:15:19.478 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:15:19.495 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:19.487 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:19.499 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 21.1067ms
+2025-10-14 10:15:19.501 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0727 ms
+2025-10-14 10:15:19.501 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:15:19.524 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 48.1166ms
+2025-10-14 10:15:19.530 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:19.538 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:15:19.539 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:19.547 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:19.550 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 10.4865 ms
+2025-10-14 10:15:19.551 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=PkANW6Np45TNKzLE0qr6Vg - null null
+2025-10-14 10:15:19.557 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 56.4952ms
+2025-10-14 10:15:19.560 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:19.569 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:15:19.887 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:15:19.904 +05:30 [INF] HTTP GET /hubs/app responded 101 in 334.5240 ms
+2025-10-14 10:15:19.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=PkANW6Np45TNKzLE0qr6Vg - 101 null null 358.4249ms
+2025-10-14 10:15:19.964 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:15:19.981 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:19.966 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:15:19.990 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 25.256ms
+2025-10-14 10:15:19.994 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:15:19.998 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:20.008 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:20.009 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0329 ms
+2025-10-14 10:15:20.014 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:20.016 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 51.5085ms
+2025-10-14 10:15:20.022 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:20.027 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:15:20.027 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=ShY2a2_AUNP5gfJ0DaftFQ - null null
+2025-10-14 10:15:20.035 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 20.7516 ms
+2025-10-14 10:15:20.040 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:20.045 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 50.6297ms
+2025-10-14 10:15:20.046 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:15:20.358 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:15:20.367 +05:30 [INF] HTTP GET /hubs/app responded 101 in 321.4536 ms
+2025-10-14 10:15:20.389 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=ShY2a2_AUNP5gfJ0DaftFQ - 101 null null 361.9859ms
+2025-10-14 10:15:20.446 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:15:20.464 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:20.444 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:15:20.468 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 22.1545ms
+2025-10-14 10:15:20.471 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:20.470 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:15:20.482 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0398 ms
+2025-10-14 10:15:20.489 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:20.492 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 48.1035ms
+2025-10-14 10:15:20.495 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:20.505 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:20.503 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:15:20.512 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=GKcn0hCSzCLL8tWil68T5A - null null
+2025-10-14 10:15:20.513 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 17.4948 ms
+2025-10-14 10:15:20.520 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:20.525 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 55.1074ms
+2025-10-14 10:15:20.526 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:15:26.644 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Players - null null
+2025-10-14 10:15:26.653 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:26.655 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Players - 204 null null 10.989ms
+2025-10-14 10:15:26.662 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/api/Players - application/json 55
+2025-10-14 10:15:26.666 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:26.668 +05:30 [INF] HTTP POST /api/Players responded 404 in 0.0551 ms
+2025-10-14 10:15:26.672 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/api/Players - 404 0 null 10.6927ms
+2025-10-14 10:15:26.679 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:15:28.564 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:15:28.574 +05:30 [INF] HTTP GET /hubs/app responded 101 in 8047.8723 ms
+2025-10-14 10:15:28.584 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=GKcn0hCSzCLL8tWil68T5A - 101 null null 8072.0813ms
+2025-10-14 10:15:28.642 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:15:28.641 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:15:28.655 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:28.665 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 23.1071ms
+2025-10-14 10:15:28.660 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:28.670 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:15:28.679 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0343 ms
+2025-10-14 10:15:28.682 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:28.687 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 46.4016ms
+2025-10-14 10:15:28.691 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:28.702 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:15:28.712 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=3sZ3BjbpAB4PHfFYrju_1A - null null
+2025-10-14 10:15:28.704 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:15:28.729 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:15:28.731 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 39.9051 ms
+2025-10-14 10:15:28.736 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:15:28.737 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 67.4441ms
+2025-10-14 10:16:08.861 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:16:08.952 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0224 ms
+2025-10-14 10:16:08.956 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 94.7075ms
+2025-10-14 10:16:08.965 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:16:44.012 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 10:16:44.062 +05:30 [INF] HTTP GET /api/Players responded 404 in 0.0259 ms
+2025-10-14 10:16:44.067 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 404 0 null 55.3473ms
+2025-10-14 10:16:44.076 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Players, Response status code: 404
+2025-10-14 10:16:52.882 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:16:52.900 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:16:52.911 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:16:53.074 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:16:53.090 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:16:53.097 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 174.3389ms
+2025-10-14 10:16:53.107 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:16:53.115 +05:30 [INF] HTTP GET /api/Player responded 200 in 215.4796 ms
+2025-10-14 10:16:53.129 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 247.0879ms
+2025-10-14 10:16:53.209 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/favicon.ico - null null
+2025-10-14 10:16:53.222 +05:30 [INF] HTTP GET /favicon.ico responded 404 in 0.0237 ms
+2025-10-14 10:16:53.226 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/favicon.ico - 404 0 null 16.8412ms
+2025-10-14 10:16:53.233 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/favicon.ico, Response status code: 404
+2025-10-14 10:16:58.896 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 10:16:58.904 +05:30 [INF] HTTP GET /hubs/app responded 101 in 90168.4121 ms
+2025-10-14 10:16:58.918 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=3sZ3BjbpAB4PHfFYrju_1A - 101 null null 90206.1071ms
+2025-10-14 10:16:59.048 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:16:59.051 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:16:59.060 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:16:59.065 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:16:59.068 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:16:59.071 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:16:59.078 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:16:59.085 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:16:59.100 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:16:59.069 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 17.8368ms
+2025-10-14 10:16:59.104 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:16:59.112 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 11.7680 ms
+2025-10-14 10:16:59.119 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 48.3233ms
+2025-10-14 10:16:59.165 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=SazaQtDIC8Dm-pUBetyPAw - null null
+2025-10-14 10:16:59.175 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:16:59.178 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:16:59.232 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:16:59.239 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:16:59.243 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 146.3686ms
+2025-10-14 10:16:59.246 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:16:59.249 +05:30 [INF] HTTP GET /api/Player responded 200 in 180.8901 ms
+2025-10-14 10:16:59.253 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 204.3557ms
+2025-10-14 10:17:08.746 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Player/13 - null null
+2025-10-14 10:17:08.753 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:08.756 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Player/13 - 204 null null 9.4981ms
+2025-10-14 10:17:08.763 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5272/api/Player/13 - null null
+2025-10-14 10:17:08.770 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:08.772 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.Delete (CricketApp.API)'
+2025-10-14 10:17:08.797 +05:30 [INF] Route matched with {action = "Delete", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:17:09.044 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+WHERE [p].[PlayerId] = @__p_0
+2025-10-14 10:17:09.167 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Players]
+OUTPUT 1
+WHERE [PlayerId] = @p0;
+2025-10-14 10:17:09.204 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-10-14 10:17:09.207 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.Delete (CricketApp.API) in 403.0324ms
+2025-10-14 10:17:09.210 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.Delete (CricketApp.API)'
+2025-10-14 10:17:09.212 +05:30 [INF] HTTP DELETE /api/Player/13 responded 200 in 440.6908 ms
+2025-10-14 10:17:09.216 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5272/api/Player/13 - 200 0 null 452.9528ms
+2025-10-14 10:17:09.228 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:17:09.235 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:09.238 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:17:09.240 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:17:09.249 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:17:09.255 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:17:09.259 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 13.8014ms
+2025-10-14 10:17:09.263 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:17:09.265 +05:30 [INF] HTTP GET /api/Player responded 200 in 27.3812 ms
+2025-10-14 10:17:09.269 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 41.3097ms
+2025-10-14 10:17:27.638 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 10:17:27.632 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:17:27.647 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:27.644 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:27.652 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:17:27.653 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 15.0641ms
+2025-10-14 10:17:27.659 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:17:27.659 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 10:17:27.712 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:27.712 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:17:27.719 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 10:17:27.722 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:17:27.725 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 10:17:27.728 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 22.6196ms
+2025-10-14 10:17:27.735 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 16.0307 ms
+2025-10-14 10:17:27.738 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=0gIKjL3PiHdKfn4tiy2JCw - null null
+2025-10-14 10:17:27.741 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:17:27.747 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 88.565ms
+2025-10-14 10:17:27.750 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:27.755 +05:30 [INF] HTTP GET /api/Player responded 200 in 102.8563 ms
+2025-10-14 10:17:27.764 +05:30 [INF] Executing endpoint '/hubs/app'
+2025-10-14 10:17:27.766 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 133.5238ms
+2025-10-14 10:17:38.443 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Player/10 - null null
+2025-10-14 10:17:38.480 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:38.482 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Player/10 - 204 null null 39.1899ms
+2025-10-14 10:17:38.493 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5272/api/Player/10 - application/json 71
+2025-10-14 10:17:38.502 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:38.504 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.Update (CricketApp.API)'
+2025-10-14 10:17:38.513 +05:30 [INF] Route matched with {action = "Update", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, CricketApp.API.DTOs.PlayerDto) on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:17:38.562 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+WHERE [p].[PlayerId] = @__p_0
+2025-10-14 10:17:38.585 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Players] SET [Age] = @p0, [Name] = @p1, [Role] = @p2, [Team] = @p3
+OUTPUT 1
+WHERE [PlayerId] = @p4;
+2025-10-14 10:17:38.598 +05:30 [INF] Executing OkObjectResult, writing value of type 'CricketApp.API.Models.Player'.
+2025-10-14 10:17:38.607 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.Update (CricketApp.API) in 89.3517ms
+2025-10-14 10:17:38.611 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.Update (CricketApp.API)'
+2025-10-14 10:17:38.613 +05:30 [INF] HTTP PUT /api/Player/10 responded 200 in 109.2356 ms
+2025-10-14 10:17:38.617 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5272/api/Player/10 - 200 null application/json; charset=utf-8 123.828ms
+2025-10-14 10:17:38.627 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:17:38.632 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:17:38.635 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:17:38.637 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:17:38.645 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:17:38.652 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:17:38.656 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 13.5652ms
+2025-10-14 10:17:38.659 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:17:38.661 +05:30 [INF] HTTP GET /api/Player responded 200 in 26.9096 ms
+2025-10-14 10:17:38.665 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 38.1443ms
+2025-10-14 10:18:12.200 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Player/12 - null null
+2025-10-14 10:18:12.206 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:12.208 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Player/12 - 204 null null 7.528ms
+2025-10-14 10:18:12.214 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5272/api/Player/12 - application/json 64
+2025-10-14 10:18:12.219 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:12.221 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.Update (CricketApp.API)'
+2025-10-14 10:18:12.224 +05:30 [INF] Route matched with {action = "Update", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, CricketApp.API.DTOs.PlayerDto) on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:18:12.234 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+WHERE [p].[PlayerId] = @__p_0
+2025-10-14 10:18:12.244 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Players] SET [Age] = @p0, [Name] = @p1, [Role] = @p2, [Team] = @p3
+OUTPUT 1
+WHERE [PlayerId] = @p4;
+2025-10-14 10:18:12.250 +05:30 [INF] Executing OkObjectResult, writing value of type 'CricketApp.API.Models.Player'.
+2025-10-14 10:18:12.259 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.Update (CricketApp.API) in 29.7911ms
+2025-10-14 10:18:12.263 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.Update (CricketApp.API)'
+2025-10-14 10:18:12.266 +05:30 [INF] HTTP PUT /api/Player/12 responded 200 in 44.3108 ms
+2025-10-14 10:18:12.270 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5272/api/Player/12 - 200 null application/json; charset=utf-8 55.3024ms
+2025-10-14 10:18:12.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:18:12.285 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:12.288 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:18:12.290 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:18:12.298 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:18:12.305 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:18:12.309 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 13.3404ms
+2025-10-14 10:18:12.312 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:18:12.314 +05:30 [INF] HTTP GET /api/Player responded 200 in 26.6598 ms
+2025-10-14 10:18:12.318 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 38.8292ms
+2025-10-14 10:18:33.649 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Player - null null
+2025-10-14 10:18:33.656 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:33.659 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Player - 204 null null 10.6044ms
+2025-10-14 10:18:33.666 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/api/Player - application/json 54
+2025-10-14 10:18:33.671 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:33.674 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.Create (CricketApp.API)'
+2025-10-14 10:18:33.680 +05:30 [INF] Route matched with {action = "Create", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CricketApp.API.DTOs.PlayerDto) on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:18:33.721 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Players] ([Age], [Name], [Role], [Team])
+OUTPUT INSERTED.[PlayerId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-14 10:18:33.744 +05:30 [INF] Executing OkObjectResult, writing value of type 'CricketApp.API.Models.Player'.
+2025-10-14 10:18:33.770 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.Create (CricketApp.API) in 85.1498ms
+2025-10-14 10:18:33.775 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.Create (CricketApp.API)'
+2025-10-14 10:18:33.779 +05:30 [INF] HTTP POST /api/Player responded 200 in 104.7478 ms
+2025-10-14 10:18:33.783 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 117.0365ms
+2025-10-14 10:18:33.801 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:18:33.806 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:33.808 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:18:33.810 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:18:33.818 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:18:33.825 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:18:33.829 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 13.3891ms
+2025-10-14 10:18:33.832 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:18:33.835 +05:30 [INF] HTTP GET /api/Player responded 200 in 26.7825 ms
+2025-10-14 10:18:33.839 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 38.0581ms
+2025-10-14 10:18:45.552 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Player/10 - null null
+2025-10-14 10:18:45.557 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:45.561 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Player/10 - 204 null null 8.4549ms
+2025-10-14 10:18:45.570 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5272/api/Player/10 - null null
+2025-10-14 10:18:45.575 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:45.579 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.Delete (CricketApp.API)'
+2025-10-14 10:18:45.582 +05:30 [INF] Route matched with {action = "Delete", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:18:45.593 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+WHERE [p].[PlayerId] = @__p_0
+2025-10-14 10:18:45.611 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Players]
+OUTPUT 1
+WHERE [PlayerId] = @p0;
+2025-10-14 10:18:45.623 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-10-14 10:18:45.631 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.Delete (CricketApp.API) in 44.7282ms
+2025-10-14 10:18:45.638 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.Delete (CricketApp.API)'
+2025-10-14 10:18:45.642 +05:30 [INF] HTTP DELETE /api/Player/10 responded 200 in 62.3387 ms
+2025-10-14 10:18:45.647 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5272/api/Player/10 - 200 0 null 76.9055ms
+2025-10-14 10:18:45.657 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 10:18:45.663 +05:30 [INF] CORS policy execution successful.
+2025-10-14 10:18:45.665 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:18:45.667 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 10:18:45.677 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 10:18:45.685 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 10:18:45.689 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 14.7191ms
+2025-10-14 10:18:45.692 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 10:18:45.695 +05:30 [INF] HTTP GET /api/Player responded 200 in 30.2034 ms
+2025-10-14 10:18:45.700 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 42.6577ms
+2025-10-14 11:56:31.024 +05:30 [INF] Executed endpoint '/hubs/app'
+2025-10-14 11:56:31.038 +05:30 [INF] HTTP GET /hubs/app responded 101 in 5971681.7324 ms
+2025-10-14 11:56:31.055 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/hubs/app?id=SazaQtDIC8Dm-pUBetyPAw - 101 null null 5971711.3302ms
+2025-10-14 13:38:05.407 +05:30 [INF] Now listening on: http://localhost:5272
+2025-10-14 13:38:06.031 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-14 13:38:06.874 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/index.html - null null
+2025-10-14 13:38:06.910 +05:30 [INF] Hosting environment: Development
+2025-10-14 13:38:07.151 +05:30 [INF] Content root path: C:\Users\VSOFT\Desktop\c#\CricketApp.API\CricketApp.API
+2025-10-14 13:38:07.907 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/index.html - 200 null text/html;charset=utf-8 1056.8242ms
+2025-10-14 13:38:07.931 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_vs/browserLink - null null
+2025-10-14 13:38:08.271 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-14 13:38:08.307 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 35.6727ms
+2025-10-14 13:38:08.356 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_vs/browserLink - 200 null text/javascript; charset=UTF-8 428.9384ms
+2025-10-14 13:38:08.647 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - null null
+2025-10-14 13:38:08.819 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 172.0682ms
+2025-10-14 13:38:12.625 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 13:38:12.688 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 13:38:12.726 +05:30 [INF] Route matched with {action = "GetAll", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CricketApp.API.Controllers.PlayerController (CricketApp.API).
+2025-10-14 13:38:12.962 +05:30 [INF] GetAll endpoint called
+2025-10-14 13:38:15.724 +05:30 [INF] Executed DbCommand (144ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 13:38:15.871 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 13:38:15.892 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API) in 3154.677ms
+2025-10-14 13:38:15.897 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayerController.GetAll (CricketApp.API)'
+2025-10-14 13:38:15.904 +05:30 [INF] HTTP GET /api/Player responded 200 in 3260.5420 ms
+2025-10-14 13:38:15.942 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 200 null application/json; charset=utf-8 3317.03ms
+2025-10-14 13:38:17.188 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 13:38:17.200 +05:30 [INF] CORS policy execution successful.
+2025-10-14 13:38:17.206 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 18.3036ms
+2025-10-14 13:38:17.210 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null 0
+2025-10-14 13:38:17.227 +05:30 [INF] CORS policy execution successful.
+2025-10-14 13:38:17.235 +05:30 [INF] Executing endpoint '/hubs/app/negotiate'
+2025-10-14 13:38:17.253 +05:30 [INF] Executed endpoint '/hubs/app/negotiate'
+2025-10-14 13:38:17.257 +05:30 [INF] HTTP POST /hubs/app/negotiate responded 200 in 24.1038 ms
+2025-10-14 13:38:17.264 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 200 316 application/json 54.334ms
+2025-10-14 13:38:17.267 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/hubs/app?id=ZupkFqhUEHhLz8oDnUFlxg - null null
+2025-10-14 13:38:17.280 +05:30 [INF] CORS policy execution successful.
+2025-10-14 13:38:17.282 +05:30 [INF] Executing endpoint '/hubs/app'

@@ -1,0 +1,35 @@
+2025-10-13 14:40:24.331 +05:30 [INF] Now listening on: http://localhost:5272
+2025-10-13 14:40:24.596 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 14:40:24.599 +05:30 [INF] Hosting environment: Development
+2025-10-13 14:40:24.603 +05:30 [INF] Content root path: C:\Users\VSOFT\Desktop\c#\CricketApp.API\CricketApp.API
+2025-10-13 14:40:25.303 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/index.html - null null
+2025-10-13 14:40:25.876 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_vs/browserLink - null null
+2025-10-13 14:40:25.832 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/index.html - 200 null text/html;charset=utf-8 539.2525ms
+2025-10-13 14:40:26.093 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-13 14:40:26.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.6631ms
+2025-10-13 14:40:26.131 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_vs/browserLink - 200 null text/javascript; charset=UTF-8 278.4166ms
+2025-10-13 14:40:26.214 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - null null
+2025-10-13 14:40:26.263 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.3331ms
+2025-10-13 14:40:29.851 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-13 14:40:29.916 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-13 14:40:29.955 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-13 14:40:32.660 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-13 14:40:32.735 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 14:40:32.766 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 2799.2052ms
+2025-10-13 14:40:32.785 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-13 14:40:32.802 +05:30 [INF] HTTP GET /api/Players responded 200 in 2925.6716 ms
+2025-10-13 14:40:32.837 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 2988.4237ms
+2025-10-13 15:04:21.243 +05:30 [INF] Now listening on: http://localhost:5272
+2025-10-13 15:04:21.577 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 15:04:21.583 +05:30 [INF] Hosting environment: Development
+2025-10-13 15:04:21.587 +05:30 [INF] Content root path: C:\Users\VSOFT\Desktop\c#\CricketApp.API\CricketApp.API
+2025-10-13 15:04:22.344 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/index.html - null null
+2025-10-13 15:04:23.091 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/index.html - 200 null text/html;charset=utf-8 761.8051ms
+2025-10-13 15:04:23.138 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_vs/browserLink - null null
+2025-10-13 15:04:23.174 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-13 15:04:23.200 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 25.5715ms
+2025-10-13 15:04:23.264 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_vs/browserLink - 200 null text/javascript; charset=UTF-8 128.137ms
+2025-10-13 15:04:23.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - null null
+2025-10-13 15:04:23.483 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.9227ms

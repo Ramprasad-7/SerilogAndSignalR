@@ -1,0 +1,262 @@
+2025-10-14 09:41:48.885 +05:30 [INF] Now listening on: http://localhost:5272
+2025-10-14 09:41:49.190 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-14 09:41:49.201 +05:30 [INF] Hosting environment: Development
+2025-10-14 09:41:49.218 +05:30 [INF] Content root path: C:\Users\VSOFT\Desktop\c#\CricketApp.API\CricketApp.API
+2025-10-14 09:41:50.215 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/index.html - null null
+2025-10-14 09:41:51.116 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_vs/browserLink - null null
+2025-10-14 09:41:51.026 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/index.html - 200 null text/html;charset=utf-8 832.6146ms
+2025-10-14 09:41:51.401 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-14 09:41:51.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 77.3022ms
+2025-10-14 09:41:51.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_vs/browserLink - 200 null text/javascript; charset=UTF-8 398.7776ms
+2025-10-14 09:41:51.658 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - null null
+2025-10-14 09:41:51.729 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.7932ms
+2025-10-14 09:41:56.143 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:41:56.216 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:41:56.260 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:42:01.243 +05:30 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:42:01.335 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:42:01.362 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 5090.6116ms
+2025-10-14 09:42:01.366 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:42:01.374 +05:30 [INF] HTTP GET /api/Players responded 200 in 5192.1973 ms
+2025-10-14 09:42:01.393 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 5250.2997ms
+2025-10-14 09:42:37.341 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:42:37.356 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 09:42:37.376 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:42:37.377 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:42:37.399 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:42:37.400 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 44.5891ms
+2025-10-14 09:42:37.410 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:42:37.588 +05:30 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:42:37.615 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:42:37.628 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 204.3772ms
+2025-10-14 09:42:37.636 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:42:37.645 +05:30 [INF] HTTP GET /api/Players responded 200 in 247.3887 ms
+2025-10-14 09:42:37.655 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 313.9699ms
+2025-10-14 09:42:45.866 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Players - null null
+2025-10-14 09:42:45.890 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:42:45.896 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Players - 204 null null 30.2562ms
+2025-10-14 09:42:45.915 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/api/Players - application/json 56
+2025-10-14 09:42:45.927 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:42:45.930 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.Create (CricketApp.API)'
+2025-10-14 09:42:45.951 +05:30 [INF] Route matched with {action = "Create", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CricketApp.API.Models.Player]] Create(CricketApp.API.DTOs.PlayerDto) on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:42:46.463 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Players] ([Age], [Name], [Role], [Team])
+OUTPUT INSERTED.[PlayerId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-14 09:42:46.534 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CricketApp.API.Models.Player'.
+2025-10-14 09:42:46.567 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.Create (CricketApp.API) in 599.4033ms
+2025-10-14 09:42:46.571 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.Create (CricketApp.API)'
+2025-10-14 09:42:46.573 +05:30 [INF] HTTP POST /api/Players responded 201 in 643.3310 ms
+2025-10-14 09:42:46.577 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/api/Players - 201 null application/json; charset=utf-8 662.2001ms
+2025-10-14 09:42:46.585 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:42:46.594 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:42:46.595 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:42:46.598 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:42:46.609 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:42:46.630 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:42:46.634 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 30.2244ms
+2025-10-14 09:42:46.637 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:42:46.640 +05:30 [INF] HTTP GET /api/Players responded 200 in 44.4163 ms
+2025-10-14 09:42:46.644 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 58.5625ms
+2025-10-14 09:43:03.185 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Players - null null
+2025-10-14 09:43:03.214 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:03.217 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Players - 204 null null 31.6716ms
+2025-10-14 09:43:03.225 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/api/Players - application/json 57
+2025-10-14 09:43:03.232 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:03.234 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.Create (CricketApp.API)'
+2025-10-14 09:43:03.238 +05:30 [INF] Route matched with {action = "Create", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CricketApp.API.Models.Player]] Create(CricketApp.API.DTOs.PlayerDto) on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:43:03.256 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Players] ([Age], [Name], [Role], [Team])
+OUTPUT INSERTED.[PlayerId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-14 09:43:03.268 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CricketApp.API.Models.Player'.
+2025-10-14 09:43:03.272 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.Create (CricketApp.API) in 28.0644ms
+2025-10-14 09:43:03.280 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.Create (CricketApp.API)'
+2025-10-14 09:43:03.285 +05:30 [INF] HTTP POST /api/Players responded 201 in 50.9310 ms
+2025-10-14 09:43:03.303 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/api/Players - 201 null application/json; charset=utf-8 78.6456ms
+2025-10-14 09:43:03.319 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:43:03.328 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:03.331 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:03.336 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:43:03.347 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:43:03.357 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:43:03.361 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 17.6941ms
+2025-10-14 09:43:03.364 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:03.367 +05:30 [INF] HTTP GET /api/Players responded 200 in 35.3341 ms
+2025-10-14 09:43:03.371 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 52.2782ms
+2025-10-14 09:43:40.807 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 09:43:40.830 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:43:40.950 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:40.954 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:40.979 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:40.958 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 151.6052ms
+2025-10-14 09:43:40.987 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:43:41.005 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:43:41.017 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:43:41.023 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 23.2334ms
+2025-10-14 09:43:41.039 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:41.044 +05:30 [INF] HTTP GET /api/Players responded 200 in 65.2107 ms
+2025-10-14 09:43:41.070 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 239.3137ms
+2025-10-14 09:43:45.223 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Players/11 - null null
+2025-10-14 09:43:45.233 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:45.236 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Players/11 - 204 null null 13.6023ms
+2025-10-14 09:43:45.246 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5272/api/Players/11 - null null
+2025-10-14 09:43:45.251 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:45.255 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.Delete (CricketApp.API)'
+2025-10-14 09:43:45.267 +05:30 [INF] Route matched with {action = "Delete", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:43:45.545 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+WHERE [p].[PlayerId] = @__p_0
+2025-10-14 09:43:45.580 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Players]
+OUTPUT 1
+WHERE [PlayerId] = @p0;
+2025-10-14 09:43:45.596 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-14 09:43:45.599 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.Delete (CricketApp.API) in 319.8426ms
+2025-10-14 09:43:45.602 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.Delete (CricketApp.API)'
+2025-10-14 09:43:45.604 +05:30 [INF] HTTP DELETE /api/Players/11 responded 204 in 349.7411 ms
+2025-10-14 09:43:45.609 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5272/api/Players/11 - 204 null null 363.2604ms
+2025-10-14 09:43:45.617 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:43:45.622 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:45.625 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:45.627 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:43:45.636 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:43:45.642 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:43:45.646 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 13.755ms
+2025-10-14 09:43:45.650 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:45.652 +05:30 [INF] HTTP GET /api/Players responded 200 in 27.0262 ms
+2025-10-14 09:43:45.656 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 39.6056ms
+2025-10-14 09:43:47.799 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:43:47.826 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 09:43:47.906 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:47.909 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:43:47.914 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 87.623ms
+2025-10-14 09:43:47.912 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:47.923 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:43:47.938 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:43:47.952 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:43:47.957 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 26.7649ms
+2025-10-14 09:43:47.962 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:43:47.967 +05:30 [INF] HTTP GET /api/Players responded 200 in 55.1252 ms
+2025-10-14 09:43:47.973 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 173.7819ms
+2025-10-14 09:44:02.363 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Players - null null
+2025-10-14 09:44:02.369 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:02.371 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Players - 204 null null 8.2326ms
+2025-10-14 09:44:02.378 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/api/Players - application/json 54
+2025-10-14 09:44:02.384 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:02.386 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.Create (CricketApp.API)'
+2025-10-14 09:44:02.388 +05:30 [INF] Route matched with {action = "Create", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CricketApp.API.Models.Player]] Create(CricketApp.API.DTOs.PlayerDto) on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:44:02.398 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Players] ([Age], [Name], [Role], [Team])
+OUTPUT INSERTED.[PlayerId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-14 09:44:02.404 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CricketApp.API.Models.Player'.
+2025-10-14 09:44:02.408 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.Create (CricketApp.API) in 15.0275ms
+2025-10-14 09:44:02.411 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.Create (CricketApp.API)'
+2025-10-14 09:44:02.414 +05:30 [INF] HTTP POST /api/Players responded 201 in 27.9449 ms
+2025-10-14 09:44:02.419 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/api/Players - 201 null application/json; charset=utf-8 41.1012ms
+2025-10-14 09:44:02.467 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:44:02.475 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:02.478 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:44:02.482 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:44:02.493 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:44:02.501 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:44:02.507 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 18.1082ms
+2025-10-14 09:44:02.511 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:44:02.514 +05:30 [INF] HTTP GET /api/Players responded 200 in 36.6480 ms
+2025-10-14 09:44:02.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 52.6309ms
+2025-10-14 09:44:10.650 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/api/Players/10 - null null
+2025-10-14 09:44:10.661 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:10.666 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/api/Players/10 - 204 null null 15.9496ms
+2025-10-14 09:44:10.711 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5272/api/Players/10 - application/json 70
+2025-10-14 09:44:10.718 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:10.720 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.Update (CricketApp.API)'
+2025-10-14 09:44:10.730 +05:30 [INF] Route matched with {action = "Update", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CricketApp.API.Models.Player]] Update(Int32, CricketApp.API.DTOs.PlayerDto) on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:44:10.753 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+WHERE [p].[PlayerId] = @__p_0
+2025-10-14 09:44:10.790 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Players] SET [Age] = @p0, [Name] = @p1, [Role] = @p2, [Team] = @p3
+OUTPUT 1
+WHERE [PlayerId] = @p4;
+2025-10-14 09:44:10.800 +05:30 [INF] Executing ObjectResult, writing value of type 'CricketApp.API.Models.Player'.
+2025-10-14 09:44:10.807 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.Update (CricketApp.API) in 69.7932ms
+2025-10-14 09:44:10.811 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.Update (CricketApp.API)'
+2025-10-14 09:44:10.814 +05:30 [INF] HTTP PUT /api/Players/10 responded 200 in 93.7700 ms
+2025-10-14 09:44:10.818 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5272/api/Players/10 - 200 null application/json; charset=utf-8 107.08ms
+2025-10-14 09:44:10.829 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:44:10.835 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:10.836 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:44:10.839 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:44:10.848 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:44:10.854 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:44:10.858 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 14.6354ms
+2025-10-14 09:44:10.862 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:44:10.864 +05:30 [INF] HTTP GET /api/Players responded 200 in 28.0612 ms
+2025-10-14 09:44:10.870 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 41.0014ms
+2025-10-14 09:44:16.722 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - null null
+2025-10-14 09:44:16.731 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:16.736 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5272/hubs/app/negotiate?negotiateVersion=1 - 204 null null 14.1128ms
+2025-10-14 09:44:16.722 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Players - null null
+2025-10-14 09:44:16.759 +05:30 [INF] CORS policy execution successful.
+2025-10-14 09:44:16.761 +05:30 [INF] Executing endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:44:16.764 +05:30 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[CricketApp.API.Models.Player]] GetAll() on controller CricketApp.API.Controllers.PlayersController (CricketApp.API).
+2025-10-14 09:44:16.777 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PlayerId], [p].[Age], [p].[Name], [p].[Role], [p].[Team]
+FROM [Players] AS [p]
+2025-10-14 09:44:16.813 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CricketApp.API.Models.Player, CricketApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-14 09:44:16.824 +05:30 [INF] Executed action CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API) in 52.1327ms
+2025-10-14 09:44:16.832 +05:30 [INF] Executed endpoint 'CricketApp.API.Controllers.PlayersController.GetAll (CricketApp.API)'
+2025-10-14 09:44:16.837 +05:30 [INF] HTTP GET /api/Players responded 200 in 75.9469 ms
+2025-10-14 09:44:16.844 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Players - 200 null application/json; charset=utf-8 123.2082ms
+2025-10-14 09:50:19.908 +05:30 [INF] Now listening on: http://localhost:5272
+2025-10-14 09:50:20.622 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-14 09:50:21.180 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/index.html - null null
+2025-10-14 09:50:21.421 +05:30 [INF] Hosting environment: Development
+2025-10-14 09:50:21.430 +05:30 [INF] Content root path: C:\Users\VSOFT\Desktop\c#\CricketApp.API\CricketApp.API
+2025-10-14 09:50:21.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/index.html - 200 null text/html;charset=utf-8 749.0324ms
+2025-10-14 09:50:21.910 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_vs/browserLink - null null
+2025-10-14 09:50:21.989 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-14 09:50:22.011 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 22.0424ms
+2025-10-14 09:50:22.067 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/_vs/browserLink - 200 null text/javascript; charset=UTF-8 157.9201ms
+2025-10-14 09:50:22.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - null null
+2025-10-14 09:50:22.553 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.3301ms
+2025-10-14 09:50:53.052 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5272/api/Player - application/json 73
+2025-10-14 09:50:53.071 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-14 09:50:53.094 +05:30 [INF] HTTP POST /api/Player responded 404 in 15.9710 ms
+2025-10-14 09:50:53.101 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5272/api/Player - 404 0 null 49.5683ms
+2025-10-14 09:50:53.130 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5272/api/Player, Response status code: 404
+2025-10-14 09:51:10.196 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5272/api/Player - null null
+2025-10-14 09:51:10.207 +05:30 [INF] HTTP GET /api/Player responded 404 in 0.0856 ms
+2025-10-14 09:51:10.212 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5272/api/Player - 404 0 null 16.2204ms
+2025-10-14 09:51:10.227 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5272/api/Player, Response status code: 404
