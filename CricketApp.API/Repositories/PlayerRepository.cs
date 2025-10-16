@@ -1,4 +1,5 @@
 ﻿using CricketApp.API.Data;
+using CricketApp.API.DTOs;
 using CricketApp.API.Interfaces;
 using CricketApp.API.Models;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +38,7 @@ namespace CricketApp.API.Repositories
         {
             return await _context.Players.ToListAsync();
         }
-
+         
         public async Task<Player> GetByIdAsync(int id)
         {
             return await _context.Players.FindAsync(id);
@@ -49,5 +50,7 @@ namespace CricketApp.API.Repositories
             await _context.SaveChangesAsync();
             return player;
         }
+
+
     }
 }
