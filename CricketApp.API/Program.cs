@@ -1,6 +1,7 @@
+using CricketApp.API.Common.MappingProfiles;
 using CricketApp.API.Data;
-using CricketApp.API.Hubs;
 using CricketApp.API.Helpers;
+using CricketApp.API.Hubs;
 using CricketApp.API.Interfaces;
 using CricketApp.API.Repositories;
 using CricketApp.API.Services;
@@ -31,6 +32,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
 builder.Services.AddScoped<IPlayerService, PlayerService>();
+builder.Services.AddAutoMapper(typeof(PlayerProfile));
 builder.Services.AddSignalR(); 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

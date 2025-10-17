@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using CricketApp.API.Models;
+using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
 namespace CricketApp.API.Hubs
@@ -11,12 +12,12 @@ namespace CricketApp.API.Hubs
         }
 
         // CRUD Event Broadcasts for Players
-        public async Task BroadcastPlayerCreated(object player)
+        public async Task BroadcastPlayerCreated(Player player)
         {
             await Clients.All.SendAsync("PlayerCreated", player);
         }
 
-        public async Task BroadcastPlayerUpdated(object player)
+        public async Task BroadcastPlayerUpdated(Player player)
         {
             await Clients.All.SendAsync("PlayerUpdated", player);
         }
